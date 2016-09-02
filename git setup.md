@@ -15,6 +15,11 @@
 
 ## Pull changes from main project to subproject
 `git checkout lab1`
-`git pull lab1 master:lab1`
+`git pull`
 `git merge -s subtree master`
-`git push`
+`git push lab1 lab1:master`
+
+###Option 2: Cherry pick
+`git checkout lab1`
+`git pull`
+`git cherry-pick --strategy=subtree ..master`
